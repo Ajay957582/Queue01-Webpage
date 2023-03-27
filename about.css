@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#about{
+    text-decoration: underline;
+}
+header {
+    display:flex;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    background-color:#eeeeee;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.digitalindialogo{
+    height: 63px;
+    width:176px ;
+   
+}
+navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+      
+}
+navbar ul li{
+    margin-left: 100px;
+    font-size: larger;
+}
+navbar ul li a{
+    text-decoration: none;
+   
+}
+navbar ul li a:focus{
+    text-decoration:underline;
+}
+/* content stsrts from here */
+#top{
+ text-align: center;
+ text-decoration: underline;
+ margin-top: 20px;
+ color:#000;
+ position: relative;
+ animation-name: top;
+ animation-duration: 1.1s;
+ animation-iteration-count: 1;
+ animation-fill-mode: forwards;
+ animation-timing-function: ease-out;
+ height: 100px;
+}
+@keyframes top{
+    from{
+    font-size: 60px;
+    }to{
+        font-size: 50px;
+    }
+}
+#one{
+    display: flex;
+padding-left: 10%;
+padding-right:10%;
+padding-top: 5%;
+
+}
+
+.sectiononepara h1{
+    opacity: 0;
+    position: relative;
+    animation-name: sectiononeheading;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+@keyframes sectiononeheading{
+    from{
+         left: 1000px;
+    }to{
+        left:0px;
+        opacity:1;
+    }
+}
+.sectiononepara p{
+    font-size: 20px;
+    position: relative;
+    animation-name: sectiononepara;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes sectiononepara{
+    from{
+        right: 130px;
+    }to{
+        right:0px
+    }
+}
+#one img {
+    position: relative;
+    animation-name: sectiononelogo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes sectiononelogo{
+    from{
+        left: 130px;
+    }to{
+        left:0px
+    }
+}
+/*section 2  */
+#two{
+    display: flex;
+padding-left: 10%;
+padding-right:10%;
+padding-top: 5%;
+
+}
+.sectiontwopara{
+    order: 1;
+}
+.sectiontwopara h1{
+    padding-right: 40px;
+    text-align: end;
+    opacity: 0;
+    position: relative;
+    animation-name: sectiontwoheading;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+}
+@keyframes sectiontwoheading{
+    from{
+         right: 1000px;
+    }to{
+        right:0px;
+        opacity:1;
+    }
+}
+.sectiontwopara p{
+    opacity: 0;
+    padding-left: 5px;
+    font-size: 20px;
+    position: relative;
+    animation-name: sectiontwopara;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+@keyframes sectiontwopara{
+    from{
+        left: 130px;
+    }to{
+        left:0px;
+        opacity:1;
+    }
+}
+#two img {
+    opacity: 0;
+    width: 199.99px;
+    height: 217.09px;
+    position: relative;
+    animation-name: sectiontwologo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+@keyframes sectiontwologo{
+    from{
+        right: 130px;
+    }to{
+        right:0px;
+        opacity: 1;
+    }
+}
+/*section 3 */
+#three{
+    padding-left: 10%;
+    padding-right:10% ;
+    padding-top: 5%;
+}
+#three h1{
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    animation-name: sectionthreeheading;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes sectionthreeheading{
+    from{
+       opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+}
+.maker img{
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  margin-top: 30px;
+}
+.maker{
+    display: flex;
+    justify-content:space-evenly;
+}
+.namelayer p{
+    text-align: center;
+}
+.line{
+    height: 100px;
+}
+.namelayer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.namelayer img{
+    border-radius: 10px;
+}

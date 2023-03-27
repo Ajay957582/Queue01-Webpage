@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#profile{
+    text-decoration: underline;
+}
+ul li a:hover{
+    color: black;
+}
+header {
+    display:flex;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    background-color:#eeeeee;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+   
+}
+.digitalindialogo{
+    height: 63px;
+    width:176px ;
+   
+}
+navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+      
+}
+navbar ul li{
+    margin-left: 100px;
+    font-size: larger;
+}
+navbar ul li a{
+    text-decoration: none;
+   
+}
+navbar ul li a:focus{
+    text-decoration:underline;
+}
+/* registration page starts from here */
+
+.detailbox{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* background-image: linear-gradient(147deg,#ddd6f3,#faaca8); */
+}
+.outmostbox{
+    /* border: 1px solid #faaca8; */
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 630px;
+    top: 190px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    background-image: linear-gradient(147deg,#ddd6f3,#faaca8);
+    box-shadow: 10px 10px 20px pink;
+}
+input{
+    margin: 10px 0px 10px 0px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(238, 232, 235);
+}
+.subbtn{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+}
+#subbtn{
+    width:380px;
+    background-color: hsl(3, 100%, 76%);
+}
+#register{
+    /* border: 1px solid; */
+    padding: 5px;
+    text-decoration: underline;
+}
+#login{
+    /* border: 1px solid; */
+    padding: 5px;
+    
+}
+.login{
+    /* border-bottom: 1px solid ; */
+    padding: 10px ;
+    font-size: 22px;
+    /* background-image: linear-gradient(147deg,#ddd6f3,#faaca8); */
+    border-top-left-radius: 20px;
+}
+.login a{
+    text-decoration: none;
+}

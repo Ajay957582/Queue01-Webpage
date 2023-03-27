@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#help{
+    text-decoration: underline;
+}
+header {
+    display:flex;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    background-color:#eeeeee;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.digitalindialogo{
+    height: 63px;
+    width:176px ;
+   
+}
+navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+      
+}
+navbar ul li{
+    margin-left: 100px;
+    font-size: larger;
+}
+navbar ul li a{
+    text-decoration: none;
+   
+}
+navbar ul li a:focus{
+    text-decoration:underline;
+}
+
+/* main content */
+
+#ek {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+}
+#ek h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#helpflexdivs{
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+.helpdivs{
+    height: 200px;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.helpdivs p{
+    font-size: 20px;
+    padding: 10px;
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+}
+#helpbox1{
+    background-image: linear-gradient(135deg,#ccfbff,#ef96c5);
+    box-shadow:10px 10px 20px #e9b5d0e8 ;
+    transition-property: height , width  ;
+    transition-duration: 1s , 1s ;
+    transition-timing-function: ease-in-out,ease-in-out;
+    animation-name: pehla;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    position:relative;
+}
+@keyframes pehla{
+    from{
+         opacity: 0;
+         right: 100px;
+    }to{
+        opacity: 1;
+        right: 0px;
+    }
+}
+#helpbox1:hover{
+    height:300px ;
+    width: 1500px;
+}
+#helpbox1:hover p{
+    font-size: 0px;
+}
+#helpbox1:hover p::after{
+    content: "If you are new on this website , do sign up otherwise sign in. For sign in / sign up you need to go to profile section of menubar .";
+    font-size: 25px;
+    animation-name: helpbox1parachange;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes helpbox1parachange{
+    from{
+        opacity:0
+    }
+    to{
+        opacity: 1;
+        padding: 50px;
+    }
+}
+#helpbox2{
+    background-image: linear-gradient(135deg,#ef96c5,#9FA5D5);
+    box-shadow: 10px 10px 20px #adb1ce;
+    transition-property: height , width ;
+    transition-duration: 1s , 1s ;
+     transition-timing-function: ease-in-out,ease-in-out;
+     animation-name: dusra;
+     animation-duration: 1s;
+     animation-timing-function: ease-in-out;
+     position:relative;
+ }
+ @keyframes dusra{
+     from{
+          opacity: 0;
+          top: 100px;
+     }to{
+         opacity: 1;
+         top: 0px;
+     }
+ }
+#helpbox2:hover{
+    height:300px ;
+    width: 1500px;
+}
+#helpbox2:hover p{
+    font-size: 0px;
+}
+#helpbox2:hover p::after{
+    content: "You may face problems if you would open this webiste on mobile phone , because this site is not made responsive for small screens";
+    font-size: 30px;
+    animation-name: helpbox2parachange;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes helpbox2parachange{
+    from{
+        opacity:0
+    }
+    to{
+        opacity: 1;
+        padding-left: 50px;
+    }
+}
+#helpbox3{
+    background-image: linear-gradient(135deg,#9FA5D5,#ccfbff);
+    box-shadow: 10px 10px 20px #99b8bb;
+    transition-property: height , width ;
+    transition-duration: 1s , 1s ;
+    transition-timing-function: ease-in-out,ease-in-out;
+    animation-name: teesra;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    position:relative;
+}
+@keyframes teesra{
+    from{
+         opacity: 0;
+         left: 100px;
+    }to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+#helpbox3:hover{
+    height:300px ;
+    width: 1500px;
+}
+#helpbox3:hover p{
+    font-size: 0px;
+}
+#helpbox3:hover p::after{
+    content: "For booking a slot , you need to go on home section , then search for your desired place , make sure that place should be registered on this webite";
+    font-size: 30px;
+    animation-name: helpbox3parachange;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes helpbox3parachange{
+    from{
+        opacity:0
+    }
+    to{
+        opacity: 1;
+        padding-left: 50px;
+    }
+}
+/*  upto here qna done furthur process is started */
+
+#do{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+#do h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.contactbox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid; */
+    
+}
+#name1 ,#number1, #mail1 ,#submit1{
+    width: 400px;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.contactbox{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4%;
+    /* border: 1px solid; */
+}
+.subdiv2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /*  border: 1px solid; */
+    margin-top: -28px;
+}
+.submit{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    padding-top: 30px;
+}
+label{
+    font-size: 20px;
+}
+.divforspace{
+    height: 100px;
+}
+.forcombinig{
+    margin-bottom: 2%;
+}
+#question1{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    font-size:15px;
+    box-sizing: border-box;
+}
+#submit1{
+    height: 50px;
+    font-weight: 500;
+    background-image:linear-gradient(135deg,rgb(211, 211, 255),rgb(252, 206, 252)) ;
+}

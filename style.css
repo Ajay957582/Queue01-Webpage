@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#home{
+    text-decoration: underline;
+}
+ul li a:hover{
+    color: black;
+}
+header {
+    display:flex;
+    align-items: center;
+    border-bottom: 5px solid grey;
+    background-color:#eeeeee;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+   
+}
+.digitalindialogo{
+    height: 63px;
+    width:176px ;
+   
+}
+navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+      
+}
+navbar ul li{
+    margin-left: 100px;
+    font-size: larger;
+}
+navbar ul li a{
+    text-decoration: none;
+   
+}
+navbar ul li a:focus{
+    text-decoration:underline;
+}
+/* search box work starts from here */
+section{
+    display: flex;
+    margin-top: 10px;
+    align-items:center;
+    justify-content: center;
+}
+#searchbox{
+    width: 1000px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+section button img{
+    height:47px ;
+    width: 47px;
+}
+section button {
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+section button {
+    border-radius: 15px;
+    margin-left: 10px;
+}
